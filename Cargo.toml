@@ -3,6 +3,13 @@ name = "rs-ipc-stream2df"
 version = "0.1.0"
 edition = "2024"
 
+description = "Processes the ipc stream using datafusion"
+license = "Apache-2.0"
+repository = "https://github.com/takanoriyanagitani/rs-ipc-stream2df"
+homepage = "https://github.com/takanoriyanagitani/rs-ipc-stream2df"
+documentation = "https://docs.rs/rs-ipc-stream2df/latest"
+keywords = ["arrow", "datafusion", "ipc", "stream"]
+
 [lints.rust]
 unsafe_code = "forbid"
 
