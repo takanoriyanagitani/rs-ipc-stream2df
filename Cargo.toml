@@ -1,0 +1,76 @@
+[package]
+name = "rs-ipc-stream2df"
+version = "0.1.0"
+edition = "2024"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+[lints.clippy]
+unwrap_used = "deny"
+expect_used = "deny"
+
+[dependencies.futures]
+version = "0"
+default-features = false
+features = [
+	"async-await",
+	"executor",
+	"std",
+]
+
+[dependencies.tokio]
+version = "1"
+default-features = false
+features = [
+	"macros",
+	"rt-multi-thread",
+]
+
+[dependencies.datafusion]
+version = "50"
+default-features = false
+features = [
+	"crypto_expressions",
+	"datetime_expressions",
+	"encoding_expressions",
+	"nested_expressions",
+	"recursive_protection",
+	"regex_expressions",
+	"string_expressions",
+	"unicode_expressions",
+]
+
+[dependencies.arrow-ipc]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.arrow-array]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.arrow-schema]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.arrow-select]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.arrow]
+version = "56"
+default-features = false
+features = [
+]
+
+[dependencies.clap]
+version = "4"
+features = ["derive"]
